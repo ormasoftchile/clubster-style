@@ -1,0 +1,37 @@
+@import "100_bootstrap";
+
+// 1. Aspect ratios
+
+$embed-responsive-aspect-ratios: () !default;
+$embed-responsive-aspect-ratios: join(((21 9), (16 9), (4 3), (1 1), (155 32), (5 1)), $embed-responsive-aspect-ratios);
+
+// 3. Carga de font
+$path-to-fonts: "../../../fonts";
+// $body-bg: $gris-claro !default;
+// $body-color: black !default;
+$font-family-sans-serif: "Montserrat", sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+//----- 3 Bootstrap variables
+
+// Merge the maps
+//@import "vidatres/custom-colors";
+
+/* Lo siguiente define las clases bg-* para cada color en el mapa $colors definido por bootstrap */
+// @each $name, $value in $custom-colors {
+//   .bg-cat-#{$name} {
+//     background-color: $value;
+//   }
+//   .text-cat-#{$name} {
+//     color: $value;
+//   }
+// }
+
+//----- 4 Base
+// Variables
+$cat-badge-font-size: 16px;
+$cat-badge-color: $white;
+$disclaimer-color: black;
+$disclaimer-bg-color: $gray-200;
+$footer-color: $white;
+$footer-bg-color: $primary;
+$font-family-titulos: "Source Sans Pro";

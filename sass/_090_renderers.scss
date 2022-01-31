@@ -1,0 +1,97 @@
+/**
+CategoriesDeck
+*/
+.cs-categories-deck {
+  .col {
+    max-width: 200px;
+  }
+  .cs-category-card {
+    background-color: green;
+    .cs-category-image-link {
+      padding: 1em;
+      .cs-category-image {
+
+      }
+    }
+    .cs-category-title-link {
+      text-align: center;
+    }
+  }
+}
+
+/**
+CategoryTitle
+*/
+.cs-category-title {
+  display: flex;
+  align-items: center;
+}
+
+/**
+BenefitsDeck
+*/
+.cs-benefits-deck {
+  .col {
+    max-width: 200px;
+  }
+  .cs-benefit-card {
+    //background-color: green;
+    .cs-benefit-image-link {
+      padding: 1em;
+      .cs-benefit-image {
+
+      }
+    }
+    .cs-benefit-title-link {
+      text-align: center;
+    }
+  }
+}
+
+/**
+BenefitDetail
+*/
+.cs-benefit-detail {
+  .cs-benefit-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3.cs-benefit-title {
+      margin-bottom: 0;
+    }
+    .cs-benefit-logo {
+      max-height: 50px;
+    }
+  }
+  .cs-vendor-info {
+    img.cs-vendor-image {
+      max-width: 100%;
+    }
+  }
+}
+
+/**
+VendorsDeck
+*/
+.cs-vendors-deck {
+    .cs-vendor-image-link {
+      padding: 1em;
+      .cs-vendor-image {
+        max-width: 100px;
+      }
+    }
+    .cs-vendor-title-link {
+      text-align: center;
+    }
+}
+
+/**
+BarElementRenderer
+*/
+.cs-bar-categories {
+  nav > ul.navbar-nav > li.nav-item > a.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

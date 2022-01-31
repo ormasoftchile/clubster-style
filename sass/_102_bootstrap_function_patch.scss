@@ -1,0 +1,13 @@
+
+@function to-rgb($value) {
+  @return $value;
+}
+@function rgba-css-var($identifier, $target) {
+  @if $identifier == "body" and $target == "bg" {
+    @return var(--#{$variable-prefix}#{$identifier}-bg);
+  } @if $identifier == "body" and $target == "text" {
+    @return var(--#{$variable-prefix}#{$identifier}-color);
+  } @else {
+    @return var(--#{$variable-prefix}#{$identifier});
+  }
+}

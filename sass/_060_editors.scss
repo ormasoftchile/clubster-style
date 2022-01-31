@@ -1,0 +1,91 @@
+/**
+  cs-editor: clase aplicada a todos los editores, encargada de establecer el estilo base de todos los editores.
+*/
+.cs-editor {
+  border: 1px solid lightgray;
+  &.cs-image-editor {
+    .cs-image-preview {
+      box-shadow: 5px 10px #888888;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    .cs-image-drop-site {
+      border: 2px dashed #ccc;
+      border-radius: 20px;
+      //width: 480px;
+      //margin: 50px auto;
+      padding: 20px;
+      box-shadow: 5px 10px #888888;
+      &.hover {
+        border-color: purple;
+      }
+      &.cs-image-dropsite-hover {
+        background-color: red;
+      }
+    }
+  }
+  &.cs-tags-editor {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    span.badge {
+      margin-right: 6px;
+    }
+    input {
+      border: none;
+      outline: none;
+    }
+  }
+  &.cs-custom-field-editor-dialog {
+    width: 320px;
+  }
+  &.cs-bar-editor-dialog {
+    width: 600px;
+    .cs-menu-items-editor {
+      height: 270px;
+      .card-body {
+        overflow-y: scroll;
+      }
+    }
+  }
+  &.cs-menu-editor-dialog {
+    width: 600px;
+  }
+  &.cs-media-items-editor {
+    .cs-media-item {
+      .cs-media-item-card {
+        .card-body {
+          max-height: 120px;
+          min-height: 120px;
+          overflow: hidden;
+          padding: 0;
+        }
+        img.cs-media-item-img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  &.cs-clubs-editor {
+    .cs-clubs-editor-image {
+      max-width: 60px;
+    }
+  }
+  &.cs-vendors-editor {
+    .cs-vendors-editor-image {
+      max-width: 60px;
+    }
+  }
+  &.cs-benefits-editor {
+    .cs-benefits-editor-image {
+      max-width: 60px;
+    }
+  }
+}
+
+quill-editor {
+  & > .ql-container {
+    height: unset;
+  }
+}
