@@ -220,6 +220,10 @@ button:not(:disabled),
   font: inherit;
   -webkit-appearance: button;
 }
+
+output {
+  display: inline-block;
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;

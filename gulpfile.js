@@ -18,7 +18,10 @@ gulp.task('clean', () => {
 gulp.task('purgecss', () => {
   return gulp.src('css/**/*.css')
       .pipe(purgecss({
-          content: ['../clubster-app/src/**/*.html']
+          content: ['../clubster-app/src/**/*.html'],
+          safelist: [
+            'h1', 'h2', 'h3'
+          ]
       }))
       .pipe(gulp.dest('output'))
 });
